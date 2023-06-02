@@ -1,0 +1,11 @@
+nums = input().split()
+length = []
+x = int(nums[0])
+y = int(nums[1])
+w = int(nums[2])
+h = int(nums[3])
+length.append(x)
+length.append(y)
+length.append(w - x)
+length.append(h - y)
+print(min(length))
