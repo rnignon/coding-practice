@@ -5,7 +5,6 @@ def solution(sizes):
     a = 0
     b = 0
     for size in sizes :
-        print(size)
         if size[0] > a :
             a = size[0]
         if size[1] > b :
