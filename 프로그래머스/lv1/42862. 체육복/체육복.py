@@ -11,7 +11,7 @@ def solution(n, lost, reserve):
                 stu[i] -= 1
                 stu[i-1] += 1
             elif i < n - 1 and stu[i+1] == -1 :
-                print(i, stu)
                 stu[i] -= 1 
                 stu[i+1] += 1
+                
     return sum([1 for s in stu if s >= 0])
